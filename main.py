@@ -4,45 +4,56 @@ zoom_How_To = ['Bus','Uber','Bike','Walk']
 fun_Times = ['Hike','Swim','Playing Pool','Karaoke']
 
 import random
-user1=True
+
 # Function selects randomly from the lists.
-def random_Choise(CH1):  
+def random_Ch(CH1):  
     random.choice(CH1)
     ran1 = random.choice(CH1)
-    return ran1
+    result = ran1
+    return result
 
-# Function will promt user for an answer. 
-def user_Input(in1):
+# Function will promt user for an answer and return the answer.
+def user_Input():
     in1 = (input('Do you like the choices I picked for you?\nPlease answer Yes or No: '))
     result = in1
-    return result
+    return in1
 
-# Will run function and asign outcome to variables.
-op1 = random_Choise(des_Loc)
-op2 = random_Choise(nom_Item)
-op3 = random_Choise(zoom_How_To)
-op4 = random_Choise(fun_Times)
-
-print (op1,op2,op3,op4)
-user_Input(user1)
-
+# Determines if the user input returned answer is true or false for the while loop below.
 def booL_dec():
-    if user_Input(user1) == 'No':
+    if user_Input() == 'No':
         ans1 = False
+        result = ans1
+        return ans1
     else:
         ans1 = True
-    result = ans1
-    return result
+        result = ans1
+    return ans1
 
 
+# 
+def ran_Op(po1,po2,po3,po4):
+    random_Ch(op1)
+    random_Ch(op2)
+    random_Ch(op3)
+    random_Ch(op4)
+    return po1
 
-while booL_dec() == False:
-    user_Input(user1)
-    print (op1,op2,op3,op4)
-    #user_Input(user1)
-    booL_dec()
+# Will assign the randomly selected item from the lists to this variable for use.
+op1 = random_Ch(des_Loc)
+op2 = random_Ch(nom_Item)
+op3 = random_Ch(zoom_How_To)
+op4 = random_Ch(fun_Times)
+
+print (op1, op2, op3, op4)
+boo1 = booL_dec()
+
+while boo1 == False:
+    ran_Op(op1,op2,op3,op4)
+    print (random_Ch(des_Loc), random_Ch(nom_Item), random_Ch(zoom_How_To), random_Ch(fun_Times))
+    boo1 = booL_dec()
 else:
-    print('Please enjoy the trip')
+    print('Please enjoy the trip I have planned for you!')
+
 
 
 
