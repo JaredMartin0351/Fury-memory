@@ -30,7 +30,7 @@ def booL_dec():
     return ans1
 
 
-# 
+# This function will run the random choice for each list.
 def ran_Op(po1,po2,po3,po4):
     random_Ch(op1)
     random_Ch(op2)
@@ -44,37 +44,13 @@ op2 = random_Ch(nom_Item)
 op3 = random_Ch(zoom_How_To)
 op4 = random_Ch(fun_Times)
 
-print (op1, op2, op3, op4)
+print (f' {op1}\n {op2}\n {op3}\n {op4}\n')
 boo1 = booL_dec()
 
 while boo1 == False:
     ran_Op(op1,op2,op3,op4)
-    print (random_Ch(des_Loc), random_Ch(nom_Item), random_Ch(zoom_How_To), random_Ch(fun_Times))
+    print (f' {random_Ch(des_Loc)}\n {random_Ch(nom_Item)}\n {random_Ch(zoom_How_To)}\n {random_Ch(fun_Times)}\n')
     boo1 = booL_dec()
 else:
     print('Please enjoy the trip I have planned for you!')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
 
