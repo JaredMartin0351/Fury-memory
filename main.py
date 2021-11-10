@@ -20,7 +20,7 @@ def user_Input():
 
 # Determines if the user input returned answer is true or false for the while loop below.
 def booL_dec():
-    if user_Input() == 'No' or 'no' or 'NO':
+    if user_Input() == ('No' or 'no' or 'NO'):
         ans1 = False
         result = ans1
         return ans1
@@ -52,5 +52,6 @@ while boo1 == False:
     print (f' {random_Ch(des_Loc)}\n {random_Ch(nom_Item)}\n {random_Ch(zoom_How_To)}\n {random_Ch(fun_Times)}\n')
     boo1 = booL_dec()
 else:
+    print(f' {op1}\n {op2}\n {op3}\n {op4}\n')
     print('Please enjoy the trip I have planned for you!')
 
