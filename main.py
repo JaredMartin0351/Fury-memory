@@ -20,7 +20,7 @@ def user_Input():
 
 # Determines if the user input returned answer is true or false for the while loop below.
 def booL_dec():
-    if user_Input() == ('No' or 'no' or 'NO'):
+    if user_Input() == ('No') or ('no') or ('NO'):
         ans1 = False
         result = ans1
         return ans1
